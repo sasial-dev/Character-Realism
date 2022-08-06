@@ -12,7 +12,7 @@
 
             "RealismServer":
             {
-                "$path": "Realism.server.lua"
+                "$path": "server"
             }
         },
         
@@ -28,7 +28,7 @@
 
                 "RealismClient":
                 {
-                    "$path": "RealismClient"
+                    "$path": "client"
                 }
             }
         }

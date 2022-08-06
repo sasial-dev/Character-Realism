@@ -7,12 +7,12 @@
 
         "RealismClient":
         {
-            "$path": "RealismClient"
+            "$path": "client"
         },
 
         "RealismServer":
         {
-            "$path": "Realism.server.lua"
+            "$path": "server"
         }
     }
 }
