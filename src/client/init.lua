@@ -12,7 +12,6 @@ local Players = game:GetService("Players")
 local Debris = game:GetService("Debris")
 
 local Util = require(script.Util)
-local Config = require(script.Config)
 local FpsCamera = require(script.FpsCamera)
 
 local XZ_VECTOR3 = Vector3.new(1, 0, 1)
@@ -478,7 +477,7 @@ end
 -- This is intended for compatibility with AeroGameFramework modules,
 -- but the function will automatically be called if executed from a LocalScript.
 
-function CharacterRealism:Start()
+function CharacterRealism:Start(Config)
 	assert(not _G.DefineRealismClient, "Realism can only be started once on the client!")
 	_G.DefineRealismClient = true
 	

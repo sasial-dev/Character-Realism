@@ -1,0 +1,24 @@
+{
+  "name": "@rbxts/character-realism",
+  "version": "1.0.0",
+  "main": "out/init.lua",
+  "license": "MPL-2.0",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "yarn run build"
+  },
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "1.3.3-types.1",
+    "@rbxts/types": "1.0.633",
+    "typescript": "4.7.4"
+  }
+}

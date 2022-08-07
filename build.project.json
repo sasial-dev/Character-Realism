@@ -7,12 +7,12 @@
 
         "RealismClient":
         {
-            "$path": "client"
+            "$path": "out/client"
         },
 
         "RealismServer":
         {
-            "$path": "server"
+            "$path": "out/server"
         }
     }
 }
