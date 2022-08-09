@@ -1,6 +1,7 @@
 local RunService = game:GetService("RunService")
+local module = {}
 
-function initaliseClient()
+function module:initaliseClient()
     if (RunService:IsClient()) then
         return require(script.client)
     else
@@ -8,10 +9,12 @@ function initaliseClient()
     end
 end
 
-function initaliseServer()
+function module:initaliseServer()
     if (RunService:IsServer()) then
         require(script.server)
     else
-        error("Cannot run initialiseClient() for character-realism on the client!")
+        error("Cannot run initialiseServer() for character-realism on the client!")
     end
 end
+
+return module
