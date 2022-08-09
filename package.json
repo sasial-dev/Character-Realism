@@ -1,16 +1,11 @@
 {
   "name": "@rbxts/character-realism",
-  "version": "1.0.0",
-  "main": "out/init.lua",
+  "version": "1.0.1",
+  "main": "src/init.lua",
   "license": "MPL-2.0",
-  "scripts": {
-    "build": "rbxtsc",
-    "watch": "rbxtsc -w",
-    "prepublishOnly": "yarn run build"
-  },
-  "types": "out/index.d.ts",
+  "types": "src/index.d.ts",
   "files": [
-    "out",
+    "src",
     "!**/*.tsbuildinfo"
   ],
   "publishConfig": {
