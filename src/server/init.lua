@@ -50,4 +50,6 @@ end
 Players.PlayerAdded:Connect(onPlayerAdded)
 setLookAngles.OnServerEvent:Connect(onReceiveLookAngles)
 
+return nil
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

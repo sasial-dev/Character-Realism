@@ -20,13 +20,15 @@ Ported to roblox-ts by: sasial-dev<br>
 ## Usage
 
 ```ts
-import "@rbxts/character-realism/server"
+import { initaliseServer } from "@rbxts/character-realism/server"
+
+initaliseServer()
 ```
 
 ```ts
-import CharacterRealism from "@rbxts/character-realism/client";
+import { initaliseClient } from "@rbxts/character-realism";
 
-CharacterRealism.Start({
+initaliseClient().Start({
 	Sounds: {
 		Dirt: 178054124,
 		Wood: 177940988,
